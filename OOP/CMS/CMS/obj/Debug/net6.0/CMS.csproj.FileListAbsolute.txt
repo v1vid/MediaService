@@ -1,0 +1,15 @@
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.csproj.AssemblyReference.cache
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.AssemblyInfoInputs.cache
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.AssemblyInfo.cs
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.csproj.CoreCompileInputs.cache
+C:\Users\ulevd\OOP\CMS\CMS\bin\Debug\net6.0\CMS.exe
+C:\Users\ulevd\OOP\CMS\CMS\bin\Debug\net6.0\CMS.deps.json
+C:\Users\ulevd\OOP\CMS\CMS\bin\Debug\net6.0\CMS.runtimeconfig.json
+C:\Users\ulevd\OOP\CMS\CMS\bin\Debug\net6.0\CMS.dll
+C:\Users\ulevd\OOP\CMS\CMS\bin\Debug\net6.0\CMS.pdb
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.dll
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\refint\CMS.dll
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.pdb
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\CMS.genruntimeconfig.cache
+C:\Users\ulevd\OOP\CMS\CMS\obj\Debug\net6.0\ref\CMS.dll
