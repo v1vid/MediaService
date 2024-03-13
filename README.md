@@ -13,7 +13,7 @@
 # Доменные Сущности
 
 
-![image_2024-03-03_15-22-01](https://github.com/v1vid/MediaService/assets/112978007/b814ebc4-47b5-45d5-9dd5-e0e4349fce96)
+![erd](https://github.com/v1vid/MediaService/assets/112978007/c2a94441-77eb-45a0-9be7-5beff024b798)
 
 ## User
 
@@ -33,18 +33,6 @@ public class User
 ## Role
 
 Определяет роль в системе, которая может быть присвоена пользователю.
-
-```csharp
-public class Role
-{
-    public string RoleType { get; set; }
-    public string Description { get; set; }
-}
-```
-
-## Role
-
-Связь между пользователями и ролями (многие ко многим).
 
 ```csharp
 public class Role
@@ -94,17 +82,23 @@ public class ArticleOrNews
 }
 ```
 
-## Search
+## UserRoleAssignment
 
-Система поиска и фильтрации, которая используется для нахождения статей и новостей по тегам.
+Это ассоциативная сущность, связывающая пользователя и его роль(роли), которая содержит ссылку на объект класса User и роль пользователя в виде объекта UserRole. Он также может содержать свой собственный идентификатор Id, если это необходимо для уникальной идентификации записей.
 
 ```csharp
-public class Search
+public class UserRoleAssignment
 {
-    public int UserId { get; set; }
-    public int TagId { get; set; }
-    public virtual User User { get; set; }
-    public virtual Tag Tag { get; set; }
+    
+    public int Id { get; set; }
+    public User User { get; set; }
+    public UserRole Role { get; set; }
+
+    public UserRoleAssignment(User user, UserRole role) 
+    {
+            User = user; 
+            Role = role;
+    }
 }
 ```
 
@@ -237,22 +231,26 @@ response - {
 }
 ```
 
-## 8. Найти статьи по тегам - GET api/v1/articles/find
+## 8. Найти статьи по тегам - GET /api/v1/articles/find?tags=tag1,tag2
 
-```json
-request - {
-    "tags": ["...", "..."]
-}
-```
 
 ```json
 response - {
-    "articles" : [
-        "id": "..."
-        "title": "..."
-        "content": "..."
-        "publication_date": "..."
-        "tags": [...]
-    ]
+  "articles": [
+    {
+      "id": "...",
+      "title": "...",
+      "content": "...",
+      "publication_date": "...",
+      "tags": [...]
+    },
+    {
+      "id": "...",
+      "title": "...",
+      "content": "...",
+      "publication_date": "...",
+      "tags": [...]
+    }
+  ]
 }
 ```
