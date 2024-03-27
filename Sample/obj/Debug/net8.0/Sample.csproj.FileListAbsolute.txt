@@ -1,0 +1,7 @@
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sample.csproj.AssemblyReference.cache
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sentry.Attributes.cs
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sample.AssemblyInfoInputs.cache
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sample.AssemblyInfo.cs
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sample.csproj.CoreCompileInputs.cache
+C:\Users\ulevd\Sample\Sample\obj\Debug\net8.0\Sample.sourcelink.json
