@@ -1,10 +1,21 @@
-namespace CMS;
+using Sample.Application.Sample.Application.Models.DTO;
 
-public class ArticleService: IArticleService
+namespace Sample.Application.Sample.Application;
+
+public class ArticleService : IArticleService
 {
+    private readonly Search _search;
+    
+    private readonly Page _page;
+
+    public ArticleService(Page page, Search search)
+    {
+        _page = page;
+        _search = search;
+    }
     public Article GetArticle(int articleID)
     {
-        foreach (Article article in Page.ArticlesOrNews)
+        foreach (Article article in _page.ArticlesOrNews)
         {
             if (articleID == article.Id)
             {
@@ -18,7 +29,7 @@ public class ArticleService: IArticleService
     public List<Article> GetUserArticles(int userID)
     {
         List<Article> Articles = new List<Article>();
-        foreach (Article article in Page.ArticlesOrNews)
+        foreach (Article article in _page.ArticlesOrNews)
         {
             if (article.Author.UserId == userID)
             {
@@ -31,13 +42,13 @@ public class ArticleService: IArticleService
 
     public string AddArticle(Article ArticlesOrNews)
     {
-        Page.AddArticleOrNews(ArticlesOrNews);
+        
+        _page.AddArticleOrNews(ArticlesOrNews);
         return "Article added successfully.";
     }
 
-    public List<IArtical> FindArticlesByTags(List<Article> articlesOrNews, string tagName)
-    {
-        Tag tag = articlesOrNews.SelectMany(a => a.Tags).FirstOrDefault(t => t.Name == tagName);
-        return Search.FilterByTag(articlesOrNews, tag);
-    }
+    public List<Article> FindArticlesByTags(string tagName){
+        List<Article> articlesOrNews = _page.ArticlesOrNews;    Tag tag = articlesOrNews.SelectMany(a => a.Tags).FirstOrDefault(t => t.Name == tagName);
+        return _search.FilterByTag(articlesOrNews, tag);}
+    
 }

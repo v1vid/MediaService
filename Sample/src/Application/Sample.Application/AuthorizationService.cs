@@ -1,41 +1,44 @@
-using System.Net;
-using System.Net.Mail;
+using System.Text;
+using Sample.Application.Sample.Application.Contracts;
 
-namespace CMS;
+namespace Sample.Application.Sample.Application;
 
-public class AuthorizationService: IAuthorizationService
+public class AuthorizationService : IAuthorizationService
 {
+    private static readonly HttpClient Client = new HttpClient();
+    private const string ApiBaseUrl = "https://api.example.com";
+
     public string SendVerificationCode(string email)
     {
-        string verificationCode = GenerateVerificationCode();
-        using (MailMessage mail = new MailMessage())
+        var verificationCodeRequest = new
         {
-            mail.From = new MailAddress("your-email@example.com");
-            mail.To.Add(email);
-            mail.Subject = "Код верификации";
-            mail.Body = $"Ваш код верификации: {verificationCode}";
+            email = email
+        };
 
-            using (SmtpClient smtp = new SmtpClient("smtp.example.com")) // Укажите адрес SMTP-сервера
-            {
-                smtp.Port = 587; // Укажите порт SMTP-сервера
-                smtp.Credentials = new NetworkCredential("your-email@example.com", "your-password"); // Укажите учетные данные для доступа к SMTP-серверу
-                smtp.EnableSsl = true;
+        var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(verificationCodeRequest), Encoding.UTF8, "application/json");
+        HttpResponseMessage response = Client.PostAsync(ApiBaseUrl + "verification-code", content).Result;
 
-                smtp.Send(mail);
-            }
+        if (response.IsSuccessStatusCode)
+        {
+            return "Код для авторизации успешно отправлен на почту";
         }
-
-        return verificationCode;
+        else
+        {
+            return "Ошибка при запросе кода для авторизации";
+        }
     }
 
     public bool AuthorizeByEmail(string email, string verificationCode)
     {
-        
-    }
+        var loginRequest = new
+        {
+            email = email,
+            verification_code = verificationCode,
+        };
 
-    private string GenerateVerificationCode()
-    {
-        Random random = new Random();
-        return random.Next(100000, 999999).ToString();
+        var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(loginRequest), Encoding.UTF8, "application/json");
+        HttpResponseMessage response = Client.PostAsync(ApiBaseUrl + "login", content).Result;
+
+        return response.IsSuccessStatusCode;
     }
 }

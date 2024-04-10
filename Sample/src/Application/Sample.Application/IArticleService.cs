@@ -1,16 +1,15 @@
-using System.Collections.Generic;
-using CMS;
+using Sample.Application.Sample.Application.Models.DTO;
 
-namespace CMS
-{
+namespace Sample.Application.Sample.Application{
     public interface IArticleService
     {
-        IArtical GetArticle(string articleID);
-        List<IArtical> GetUserArticles(string userID);
-        string AddArticle(IArticleData articleData);
-        IResponse AddTagsToArticle(string articleID, List<string> tags);
-        IResponse DeleteTagsFromArticle(string articleID, List<string> tags);
-        List<IArtical> FindArticlesByTags(List<string> tags);
+        Article GetArticle(int articleID);
+
+        List<Article> GetUserArticles(int userID);
+
+        string AddArticle(Article ArticlesOrNews);
+
+        List<Article> FindArticlesByTags( string tagName);
     }
-    
+
 }

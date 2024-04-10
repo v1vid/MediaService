@@ -1,49 +1,79 @@
 ﻿using CMS.enums;
+using Microsoft.EntityFrameworkCore;
+using Sample.Application.Sample.Application.Models.DTO;
+using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
 
-namespace CMS.Repositories
+namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
 {
-    public class UserRoleAssignmentRepository
+    public class UserRoleAssignmentRepository : RepositoryBase<UserRoleAssignment, UserRoleAssignmentModel>
     {
-        private readonly List<UserRoleAssignment> _userRoleAssignments;
+        private readonly DbContext _context;
 
-        public UserRoleAssignmentRepository()
+        public UserRoleAssignmentRepository(DbContext context) : base(context)
         {
-            _userRoleAssignments = new List<UserRoleAssignment>();
+            _context = context;
+
         }
 
-        public IEnumerable<UserRoleAssignment> GetAllUserRoleAssignments()
+        protected override DbSet<UserRoleAssignmentModel> DbSet => _context.Set<UserRoleAssignmentModel>();
+
+        protected override UserRoleAssignmentModel MapFrom(UserRoleAssignment entity)
         {
-            return _userRoleAssignments;
+            return new UserRoleAssignmentModel(entity.User, entity.Role, entity.UserId, entity.Id)
+            {
+                UserId = entity.UserId,
+                Role = entity.Role
+            };
         }
 
-        public IEnumerable<UserRoleAssignment> GetUserRoleAssignmentsForUser(User user)
+        protected override bool Equal(UserRoleAssignment entity, UserRoleAssignmentModel model)
         {
-            return _userRoleAssignments.Where(ura => ura.User == user);
+            return entity.UserId == model.UserId && entity.Role == model.Role;
         }
 
-        public IEnumerable<UserRoleAssignment> GetUserRoleAssignmentsForRole(UserRole role)
+        protected override void UpdateModel(UserRoleAssignmentModel model, UserRoleAssignment entity)
         {
-            return _userRoleAssignments.Where(ura => ura.Role == role);
+            model.UserId = entity.UserId;
+            model.User = entity.User;
+            model.Role = entity.Role;
         }
 
-        public void AddUserRoleAssignment(UserRoleAssignment userRoleAssignment)
+
+        public IEnumerable<UserRoleAssignmentModel> GetAllUserRoleAssignments()
         {
-            _userRoleAssignments.Add(userRoleAssignment);
+            return DbSet.ToList();
         }
 
-        public void RemoveUserRoleAssignment(UserRoleAssignment userRoleAssignment)
+        public IEnumerable<UserRoleAssignmentModel> GetUserRoleAssignmentsForUser(User user)
         {
-            _userRoleAssignments.Remove(userRoleAssignment);
+            return DbSet.Where(ura => ura.User == user).ToList();
+        }
+
+        public IEnumerable<UserRoleAssignmentModel> GetUserRoleAssignmentsForRole(UserRole role)
+        {
+            return DbSet.Where(ura => ura.Role == role).ToList();
+        }
+
+        public void AddUserRoleAssignment(UserRoleAssignmentModel userRoleAssignment)
+        {
+            DbSet.Add(userRoleAssignment);
+        }
+
+        
+
+        public void RemoveUserRoleAssignment(UserRoleAssignmentModel userRoleAssignment)
+        {
+            DbSet.Remove(userRoleAssignment);
         }
 
         public void RemoveUserRoleAssignmentsForUser(User user)
         {
-            _userRoleAssignments.RemoveAll(ura => ura.User == user);
+            DbSet.RemoveRange(DbSet.Where(ura => ura.User == user));
         }
 
         public void RemoveUserRoleAssignmentsForRole(UserRole role)
         {
-            _userRoleAssignments.RemoveAll(ura => ura.Role == role);
+            DbSet.RemoveRange(DbSet.Where(ura => ura.Role == role));
         }
     }
 }
