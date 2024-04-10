@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace CMS
+namespace Sample.Application.Sample.Application
 {
     public interface IArtical
     {

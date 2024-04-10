@@ -1,3 +1,3 @@
-namespace Sample.Infrastructure.Persistence;
+namespace Sample.Infrastructure.Sample.Infrastructure.Persistence;
 
 internal interface IAssemblyMarker { }

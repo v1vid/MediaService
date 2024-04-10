@@ -1,4 +1,4 @@
-namespace CMS
+namespace Sample.Application.Sample.Application
 {
     public interface IResponse
     {

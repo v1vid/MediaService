@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace CMS;
+namespace Sample.Application.Sample.Application.Contracts;
 public interface IAuthorizationService  
 {  
     string SendVerificationCode(string email);  

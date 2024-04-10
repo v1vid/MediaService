@@ -1,4 +1,5 @@
-﻿namespace CMS;
+﻿
+namespace Sample.Application.Sample.Application.Models.DTO;
 
 public class Search
 {

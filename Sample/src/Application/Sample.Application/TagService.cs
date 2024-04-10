@@ -1,12 +1,22 @@
-namespace CMS;
+using Sample.Application.Sample.Application.Models.DTO;
 
+namespace Sample.Application.Sample.Application;
 public class TagService : ITagService
 {
+    private readonly Page _page;
+    private readonly Article _article;
+    
+    public TagService(Page page, Article article)
+    {
+        _page = page;
+        _article = article;
+    }
+
     public List<string> GetTagsForArticle(string articleID)
     {
         List<string> TagsforArticle = new List<string>();
 
-        foreach (Article article in Page.ArticlesOrNews)
+        foreach (Article article in _page.ArticlesOrNews)
         {
             if (articleID == article.Id.ToString())
             {
@@ -22,14 +32,15 @@ public class TagService : ITagService
 
     public string AddTagsToArticle(int articleID, List<string> tagNames)
     {
-        foreach (Article article in Page.ArticlesOrNews)
+        int tagId = _article.Tags.Count;
+        foreach (Article article in _page.ArticlesOrNews)
         {
             if (articleID == article.Id)
             {
                 List<Tag> tagsToAdd = new List<Tag>();
                 foreach (string tagName in tagNames)
                 {
-                    Tag tag = new Tag { Name = tagName };
+                    Tag tag = new Tag(tagId, tagName);
                     tagsToAdd.Add(tag);
                 }
 
@@ -43,7 +54,7 @@ public class TagService : ITagService
 
     public string DeleteTagsFromArticle(int articleID, List<string> tagNames)
     {
-        foreach (Article article in Page.ArticlesOrNews)
+        foreach (Article article in _page.ArticlesOrNews)
         {
             if (articleID == article.Id)
             {

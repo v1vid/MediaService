@@ -1,25 +1,30 @@
-﻿
+﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
 
-namespace Sample.Infrastructure.Persistence.Contexts;
-
-public class ApplicationDbContext : DbContext
+namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Contexts
 {
-    public ApplicationDbContext() {}
-    public ApplicationDbContext(DbContextOptions options) : base(options) { }
-    public required DbSet<Student> Students { get; set; }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    public class ApplicationDbContext : DbContext
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-        // Сюда добавлять различные конфигурации ваших файлов
-        base.OnModelCreating(modelBuilder);
-    }
-}
+       
 
-// Добавил, чтобы видели, примерно какая модель конфигурируется
-public class Student
-{
-    public Guid Id { get; set; }
-    public string? FullName { get; set; }
-    public int Age { get; set; }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+            Database.EnsureCreated();
+        }
+
+        public DbSet<ArticleModel> Articles { get; set; }
+        public DbSet<PageModel> Pages { get; set; }
+        public DbSet<RoleModel> Roles { get; set; }
+        public DbSet<TagModel> Tags { get; set; }
+        public DbSet<UserModel> Users { get; set; }
+        public DbSet<UserRoleAssignmentModel> UserRoleAssignments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            base.OnModelCreating(modelBuilder);
+        }
+
+    }
 }

@@ -1,3 +1,3 @@
-namespace Sample.Presentation.Http;
+namespace Sample.Presentation.Sample.Presentation.Http;
 
 internal interface IAssemblyMarker { }

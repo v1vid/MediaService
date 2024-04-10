@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using CMS;
+﻿namespace Sample.Application.Sample.Application;
+public interface ITagService
+{
+    List<string> GetTagsForArticle(string articleID);
 
-namespace CMS;
-public interface ITagService  
-{  
-    List<string> GetTagsForArticle(string articleID);  
-    IResponse AddTagsToArticle(string articleID, List<string> tags);  
-    IResponse DeleteTagsFromArticle(string articleID, List<string> tags);  
+    string AddTagsToArticle(int articleID, List<string> tagNames);
+
+    string DeleteTagsFromArticle(int articleID, List<string> tagNames);
 }

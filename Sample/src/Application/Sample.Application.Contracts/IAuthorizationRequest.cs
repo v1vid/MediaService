@@ -1,5 +1,4 @@
-using System;
-namespace CMS
+namespace Sample.Application.Sample.Application.Contracts
 {
     public interface IAuthorizationRequest
     { 

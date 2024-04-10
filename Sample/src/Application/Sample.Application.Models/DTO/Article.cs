@@ -1,4 +1,4 @@
-﻿namespace CMS;
+﻿namespace Sample.Application.Sample.Application.Models.DTO;
 
 public class Article
 {
@@ -9,7 +9,7 @@ public class Article
     public List<Tag> Tags { get; set; }
     public User Author { get; set; } 
 
-    public Article(int id, string title, string content, DateTime publicationDate, User author)
+    public Article(int id, string title, string content, DateTime publicationDate, List<Tag> tags, User author)
     {
         Id = id;
         Title = title;

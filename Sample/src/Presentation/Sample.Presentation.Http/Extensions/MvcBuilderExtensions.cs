@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Sample.Presentation.Http.Extensions;
+namespace Sample.Presentation.Sample.Presentation.Http.Extensions;
 
 public static class MvcBuilderExtensions
 {

@@ -1,45 +1,76 @@
 ﻿using CMS.enums;
-namespace CMS.Repositories
-{
-    public class RoleRepository
-    {
-        private readonly List<Role> _roles;
+using Microsoft.EntityFrameworkCore;
+using Sample.Application.Sample.Application.Models.DTO;
+using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
 
-        public RoleRepository()
+namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
+{
+    public class RoleRepository : RepositoryBase<Role, RoleModel>
+    {
+        private readonly DbContext _context;
+
+        public RoleRepository(DbContext context) : base(context)
         {
-            _roles = new List<Role>();
+            _context = context;
+
         }
 
-        public IEnumerable<Role> GetAllRoles()
+        protected override DbSet<RoleModel> DbSet => _context.Set<RoleModel>();
+
+        protected override RoleModel MapFrom(Role entity)
         {
-            return _roles;
+            return new RoleModel(entity.RoleType, entity.Description)
+            {
+                RoleType = entity.RoleType,
+                Description = entity.Description
+            };
+        }
+
+        protected override bool Equal(Role entity, RoleModel model)
+        {
+            return entity.RoleType == model.RoleType;
+        }
+
+        protected override void UpdateModel(RoleModel model, Role entity)
+        {
+            model.Description = entity.Description;
+        }
+
+
+        public IEnumerable<RoleModel> GetAllRoles()
+        {
+            return DbSet.ToList();
         }
 
         public Role GetRoleByType(UserRole roleType)
         {
-            return _roles.FirstOrDefault(r => r.RoleType == roleType);
+            
+                var roleModel = DbSet.FirstOrDefault(r => r.RoleType == roleType);
+                if (roleModel != null)
+                {
+                    return new Role(roleModel.RoleType, roleModel.Description);
+                }
+                else
+                {
+                    throw new ArgumentException("Роль не найдена");
+                }
         }
 
         public void AddRole(Role role)
         {
-            _roles.Add(role);
-        }
-
-        public void UpdateRole(Role role)
-        {
-            var existingRole = _roles.FirstOrDefault(r => r.RoleType == role.RoleType);
-            if (existingRole != null)
-            {
-                existingRole.Description = role.Description;
-            }
+            DbSet.Add(MapFrom(role));
         }
 
         public void DeleteRole(UserRole roleType)
         {
-            var roleToRemove = _roles.FirstOrDefault(r => r.RoleType == roleType);
+            var roleToRemove = DbSet.FirstOrDefault(r => r.RoleType == roleType);
             if (roleToRemove != null)
             {
-                _roles.Remove(roleToRemove);
+                DbSet.Remove(roleToRemove);
+            }
+            else
+            {
+                throw new ArgumentException("Роль не найдена");
             }
         }
     }
