@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\Sample.Application.Models\Sample.Application.Models.csproj"/>
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.0-preview.3.24172.9" />
+        <PackageReference Include="Itmo.Dev.Platform.Postgres" Version="1.1.94" />
+        <PackageReference Include="Itmo.Dev.Platform.Common" Version="1.1.94" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="SourceKit.Generators.Builder" Version="1.2.30" />
+    </ItemGroup>
+
+</Project>

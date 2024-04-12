@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "vhBQVF7y6WKUm67iLBxIKNw09ruDM18lreE6fZyTBI6a4p6d9LSq+nqdOIYTPWNM8JP6uZDd/7d0TqE55YEpAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ulevd\\.nuget\\packages\\itmo.dev.editorconfig\\1.0.2\\itmo.dev.editorconfig.1.0.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.406\\stylecop.analyzers.1.2.0-beta.406.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.406\\stylecop.analyzers.unstable.1.2.0.406.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.linq.async\\6.0.1\\system.linq.async.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

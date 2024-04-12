@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ulevd\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\ulevd\.nuget\packages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'CSX' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Artifacts.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Artifacts.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Artifacts.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\BuildContext.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\BuildContext.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>BuildContext.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\BuildEnvironment.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\BuildEnvironment.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>BuildEnvironment.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\CodeCoverageReportGenerator.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\CodeCoverageReportGenerator.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CodeCoverageReportGenerator.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Command.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Command.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Command.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Docker.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Docker.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Docker.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\DotNet.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\DotNet.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>DotNet.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\FileUtils.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\FileUtils.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>FileUtils.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Git.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Git.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Git.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\GitHub-ReleaseManager.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\GitHub-ReleaseManager.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>GitHub-ReleaseManager.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\GitHub.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\GitHub.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>GitHub.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Internalizer.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Internalizer.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Internalizer.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Logger.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Logger.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Logger.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\NuGet.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\NuGet.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>NuGet.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\OpenCover.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\OpenCover.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>OpenCover.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Outdated.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Outdated.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Outdated.csx</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Vulnerabilities.csx" Condition="Exists('$(NuGetPackageRoot)dotnet.build\0.22.0\contentFiles\csx\any\Vulnerabilities.csx')">
+      <NuGetPackageId>Dotnet.Build</NuGetPackageId>
+      <NuGetPackageVersion>0.22.0</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Vulnerabilities.csx</Link>
+    </Compile>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.0-preview.2.24128.4\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.0-preview.2.24128.4\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.0-preview.2.24128.4\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.0-preview.2.24128.4\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgSentry Condition=" '$(PkgSentry)' == '' ">C:\Users\ulevd\.nuget\packages\sentry\4.1.0</PkgSentry>
+    <PkgMicrosoft_EntityFrameworkCore_Tools_DotNet Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools_DotNet)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.entityframeworkcore.tools.dotnet\2.0.3</PkgMicrosoft_EntityFrameworkCore_Tools_DotNet>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.0-preview.2.24128.4</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgDotNetBuild_Runner_Assembly Condition=" '$(PkgDotNetBuild_Runner_Assembly)' == '' ">C:\Users\ulevd\.nuget\packages\dotnetbuild.runner.assembly\1.1.0</PkgDotNetBuild_Runner_Assembly>
+  </PropertyGroup>
+</Project>

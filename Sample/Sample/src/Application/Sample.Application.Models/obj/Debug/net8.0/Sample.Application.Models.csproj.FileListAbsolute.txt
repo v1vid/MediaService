@@ -1,0 +1,7 @@
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.csproj.AssemblyReference.cache
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.AssemblyInfoInputs.cache
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.AssemblyInfo.cs
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.csproj.CoreCompileInputs.cache
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.sourcelink.json
+C:\Users\ulevd\Sample\Sample\src\Application\Sample.Application.Models\obj\Debug\net8.0\Sample.Application.Models.xml
