@@ -24,9 +24,10 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
                 Username = entity.Username,
                 Password = entity.Password,
                 Email = entity.Email,
-                Roles = entity.Roles
+                Roles = entity.Roles.Select(role => new RoleModel(role.RoleType, role.Description)).ToList()
             };
         }
+
 
         protected override bool Equal(User entity, UserModel model)
         {
@@ -38,7 +39,7 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
             model.Username = entity.Username;
             model.Password = entity.Password;
             model.Email = entity.Email;
-            model.Roles = entity.Roles;
+            model.Roles = entity.Roles.Select(role => new RoleModel(role.RoleType, role.Description)).ToList();
         }
 
 

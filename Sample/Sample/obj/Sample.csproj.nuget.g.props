@@ -158,7 +158,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
     <PkgSentry Condition=" '$(PkgSentry)' == '' ">C:\Users\ulevd\.nuget\packages\sentry\4.1.0</PkgSentry>
-    <PkgMicrosoft_EntityFrameworkCore_Tools_DotNet Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools_DotNet)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.entityframeworkcore.tools.dotnet\2.0.3</PkgMicrosoft_EntityFrameworkCore_Tools_DotNet>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ulevd\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.0-preview.2.24128.4</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgDotNetBuild_Runner_Assembly Condition=" '$(PkgDotNetBuild_Runner_Assembly)' == '' ">C:\Users\ulevd\.nuget\packages\dotnetbuild.runner.assembly\1.1.0</PkgDotNetBuild_Runner_Assembly>

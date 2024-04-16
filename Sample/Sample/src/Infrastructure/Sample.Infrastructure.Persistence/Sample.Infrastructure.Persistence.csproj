@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
@@ -11,10 +10,18 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\Application\Sample.Application.Abstractions\Sample.Application.Abstractions.csproj"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.2.24128.4" /> <!-- Замените "5.0.0" на актуальную версию -->
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-preview.2.24128.4" /> <!-- Замените "5.0.0" на актуальную версию -->
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-preview.2.24128.4" /> <!-- Замените "5.0.0" на актуальную версию -->
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0-preview.2" /> <!-- Замените "5.0.0" на актуальную версию -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
     </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Itmo.Dev.Editorconfig" Version="1.0.1" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.0.0" />
+        <PackageReference Include="System.Linq.Async" Version="4.0.0"/>
+    </ItemGroup>
+    
+    
 
 </Project>

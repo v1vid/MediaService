@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
+
 namespace Sample.Application.Sample.Application.Models.DTO;
 
 public class Search

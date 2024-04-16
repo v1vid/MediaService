@@ -19,10 +19,14 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
 
         protected override UserRoleAssignmentModel MapFrom(UserRoleAssignment entity)
         {
-            return new UserRoleAssignmentModel(entity.User, entity.Role, entity.UserId, entity.Id)
+            var userModel = new UserModel(entity.User.UserId, entity.User.Username, entity.User.Password, entity.User.Email);
+            
+            return new UserRoleAssignmentModel(userModel, entity.Role, entity.UserId, entity.Id)
             {
                 UserId = entity.UserId,
-                Role = entity.Role
+                Role = entity.Role,
+                User = userModel
+
             };
         }
 
@@ -34,8 +38,7 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
         protected override void UpdateModel(UserRoleAssignmentModel model, UserRoleAssignment entity)
         {
             model.UserId = entity.UserId;
-            model.User = entity.User;
-            model.Role = entity.Role;
+            model.Role = entity.Role;           
         }
 
 
@@ -44,7 +47,7 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
             return DbSet.ToList();
         }
 
-        public IEnumerable<UserRoleAssignmentModel> GetUserRoleAssignmentsForUser(User user)
+        public IEnumerable<UserRoleAssignmentModel> GetUserRoleAssignmentsForUser(UserModel user)
         {
             return DbSet.Where(ura => ura.User == user).ToList();
         }
@@ -66,7 +69,7 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
             DbSet.Remove(userRoleAssignment);
         }
 
-        public void RemoveUserRoleAssignmentsForUser(User user)
+        public void RemoveUserRoleAssignmentsForUser(UserModel user)
         {
             DbSet.RemoveRange(DbSet.Where(ura => ura.User == user));
         }

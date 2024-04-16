@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Sample.Application.Sample.Application.Models.DTO;
 using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
 {
@@ -17,15 +20,15 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
 
         protected override ArticleModel MapFrom(Article entity)
         {
-            return new ArticleModel(entity.Id, entity.Title, entity.Content, entity.PublicationDate, entity.Tags,
-                entity.Author)
-            {
-                Title = entity.Title,
-                Content = entity.Content,
-                PublicationDate = entity.PublicationDate,
-                Tags = entity.Tags,
-                Author = entity.Author,
-            };
+            // Конвертируем список Tag в список TagModel
+            var tags = entity.Tags.Select(tag => new TagModel(tag.TagId, tag.Name)).ToList();
+
+            return new ArticleModel(entity.Id,
+                entity.Title,
+                entity.Content,
+                entity.PublicationDate,
+                tags,  // передаем сконвертированный список
+                entity.Author);
         }
 
         protected override bool Equal(Article entity, ArticleModel model)
@@ -38,7 +41,9 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
             model.Title = entity.Title;
             model.Content = entity.Content;
             model.PublicationDate = entity.PublicationDate;
-            model.Tags = entity.Tags;
+
+            var tags = entity.Tags.Select(tag => new TagModel(tag.TagId, tag.Name)).ToList();
+            model.Tags = tags; 
             model.Author = entity.Author;
         }
 
@@ -53,13 +58,17 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
             var articleModel = DbSet.FirstOrDefault(a => a.Id == articleId);
             if (articleModel != null)
             {
-                return new Article(articleModel.Id, articleModel.Title, articleModel.Content, articleModel.PublicationDate, articleModel.Tags, articleModel.Author);
+                return new Article(articleModel.Id,
+                    articleModel.Title,
+                    articleModel.Content,
+                    articleModel.PublicationDate,
+                    articleModel.Tags,
+                    articleModel.Author);
             }
             else
             {
                 throw new ArgumentException("Статья не найдена");
             }
-            
         }
 
         public void AddArticle(Article article)

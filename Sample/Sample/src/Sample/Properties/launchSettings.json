@@ -1,4 +1,7 @@
 ﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=5432;Database=cms;User Id=postgres;Password=1472;"
+  },
   "profiles": {
     "http": {
       "commandName": "Project",

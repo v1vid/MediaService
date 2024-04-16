@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj": {}
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
+        "projectUniqueName": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
         "projectName": "Sample.Application.Abstractions",
-        "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
+        "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
         "packagesPath": "C:\\Users\\ulevd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\obj\\",
+        "outputPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ulevd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,87 +26,10 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
-                "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj"
+              "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
+                "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj"
               }
             }
-          }
-        },
-        "warningProperties": {
-          "allWarningsAsErrors": true,
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Itmo.Dev.Platform.Common": {
-              "target": "Package",
-              "version": "[1.1.94, )"
-            },
-            "Itmo.Dev.Platform.Postgres": {
-              "target": "Package",
-              "version": "[1.1.94, )"
-            },
-            "Microsoft.Extensions.Options.ConfigurationExtensions": {
-              "target": "Package",
-              "version": "[9.0.0-preview.3.24172.9, )"
-            },
-            "SourceKit.Generators.Builder": {
-              "target": "Package",
-              "version": "[1.2.30, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
-        "projectName": "Sample.Application.Models",
-        "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
-        "packagesPath": "C:\\Users\\ulevd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\ulevd\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -127,15 +50,33 @@
           "dependencies": {
             "Itmo.Dev.Editorconfig": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "(, )"
+            },
+            "Itmo.Dev.Platform.Common": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "Itmo.Dev.Platform.Postgres": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "SourceKit.Generators.Builder": {
+              "target": "Package",
+              "version": "[1.2.30, )"
             },
             "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.2.0-beta.406, )"
+              "version": "(, )"
             },
             "System.Linq.Async": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "(, )"
             }
           },
           "imports": [
@@ -158,14 +99,94 @@
         }
       }
     },
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj": {
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj",
-        "projectName": "Sample.Infrastructure.Persistence",
-        "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
+        "projectName": "Sample.Application.Models",
+        "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
         "packagesPath": "C:\\Users\\ulevd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ulevd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU1504",
+            "NU1505",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Itmo.Dev.Editorconfig": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "(, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "(, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj",
+        "projectName": "Sample.Infrastructure.Persistence",
+        "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\Sample.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\ulevd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Infrastructure\\Sample.Infrastructure.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ulevd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -180,8 +201,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {
-                "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj"
+              "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj"
               }
             }
           }
@@ -202,21 +223,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Itmo.Dev.Editorconfig": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "Itmo.Dev.Platform.Postgres": {
               "target": "Package",
               "version": "[1.1.94, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0-preview.2.24128.4, )"
+              "version": "(, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[9.0.0-preview.2.24128.4, )"
+              "version": "(, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[9.0.0-preview.2.24128.4, )"
+              "version": "(, )"
             },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
@@ -224,7 +249,17 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.0-preview.2, )"
+              "version": "(, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "(, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "(, )"
             }
           },
           "imports": [

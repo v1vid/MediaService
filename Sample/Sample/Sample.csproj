@@ -19,15 +19,9 @@
         <PackageReference Include="DotNetBuild.Runner.Assembly" Version="1.1.0" />
         <PackageReference Include="DotNetToolkit" Version="1.7.0" />
         <PackageReference Include="DotnetToolset" Version="0.19.1" />
-        <PackageReference Include="Eml.ControllerBase" Version="2.2.0.90" />
-        <PackageReference Include="Itmo.Dev.Platform.Common" Version="1.1.94" />
         <PackageReference Include="Itmo.Dev.Platform.Logging" Version="1.0.94" />
         <PackageReference Include="Itmo.Dev.Platform.Postgres" Version="1.1.94" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.3" />
-        <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="5.0.0-preview.5.20278.1" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.2.24128.4" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-preview.2.24128.4">
             <PrivateAssets>all</PrivateAssets>
@@ -37,20 +31,10 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
         <PackageReference Include="Microsoft.NETCore.DotNetAppHost" Version="9.0.0-preview.2.24128.5" />
-        <PackageReference Include="Migrations" Version="1.0.1" />
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.3-beta1" />
-        <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.16-beta1" />
-        <PackageReference Include="NewtonsoftJsonExt" Version="1.0.0" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0-preview.2" />
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="2.0.0-preview1" />
-        <PackageReference Include="Npgsql.Json.NET" Version="8.0.2" />
-        <PackageReference Include="NSwag.SwaggerGeneration" Version="12.3.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
     </ItemGroup>
+    
 
     <ItemGroup>
         <Folder Include="src\Application\Sample.Application.Models\" />

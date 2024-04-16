@@ -1,4 +1,5 @@
 ﻿using CMS.enums;
+using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
 
 namespace Sample.Application.Sample.Application.Models.DTO;
 

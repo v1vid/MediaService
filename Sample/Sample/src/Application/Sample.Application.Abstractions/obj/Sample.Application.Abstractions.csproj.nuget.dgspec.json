@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {}
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
+        "projectUniqueName": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
         "projectName": "Sample.Application.Abstractions",
-        "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
+        "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\Sample.Application.Abstractions.csproj",
         "packagesPath": "C:\\Users\\ulevd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\obj\\",
+        "outputPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ulevd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
-                "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj"
+              "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
+                "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj"
               }
             }
           }
@@ -48,21 +48,35 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Itmo.Dev.Editorconfig": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "Itmo.Dev.Platform.Common": {
               "target": "Package",
-              "version": "[1.1.94, )"
+              "version": "(, )"
             },
             "Itmo.Dev.Platform.Postgres": {
               "target": "Package",
-              "version": "[1.1.94, )"
+              "version": "(, )"
             },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
-              "version": "[9.0.0-preview.3.24172.9, )"
+              "version": "(, )"
             },
             "SourceKit.Generators.Builder": {
               "target": "Package",
               "version": "[1.2.30, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "(, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "(, )"
             }
           },
           "imports": [
@@ -85,14 +99,14 @@
         }
       }
     },
-    "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
+    "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
         "projectName": "Sample.Application.Models",
-        "projectPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
+        "projectPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\Sample.Application.Models.csproj",
         "packagesPath": "C:\\Users\\ulevd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulevd\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\obj\\",
+        "outputPath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ulevd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -111,6 +125,11 @@
         },
         "warningProperties": {
           "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU1504",
+            "NU1505",
+            "NU1701"
+          ],
           "warnAsError": [
             "NU1605"
           ]
@@ -127,15 +146,17 @@
           "dependencies": {
             "Itmo.Dev.Editorconfig": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "(, )"
             },
             "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.2.0-beta.406, )"
+              "version": "(, )"
             },
             "System.Linq.Async": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "(, )"
             }
           },
           "imports": [

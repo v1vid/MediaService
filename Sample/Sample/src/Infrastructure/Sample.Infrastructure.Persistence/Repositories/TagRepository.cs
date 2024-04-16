@@ -2,87 +2,86 @@
 using Sample.Application.Sample.Application.Models.DTO;
 using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
 
-namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories
+namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Repositories;
+
+public class TagRepository : RepositoryBase<Tag, TagModel>
 {
-    public class TagRepository : RepositoryBase<Tag, TagModel>
+    private readonly DbContext _context;
+
+    public TagRepository(DbContext context) : base(context) 
     {
-        private readonly DbContext _context;
+        _context = context;
 
-        public TagRepository(DbContext context) : base(context) 
+    }
+
+    protected override DbSet<TagModel> DbSet => _context.Set<TagModel>();
+
+    protected override TagModel MapFrom(Tag entity)
+    {
+        return new TagModel(entity.TagId, entity.Name)
         {
-            _context = context;
+            TagId = entity.TagId,
+            Name = entity.Name
+        };
+    }
 
+    protected override bool Equal(Tag entity, TagModel model)
+    {
+        return entity.TagId == model.TagId;
+    }
+
+    protected override void UpdateModel(TagModel model, Tag entity)
+    {
+        model.Name = entity.Name;
+    }
+
+
+    public IEnumerable<TagModel> GetAllTags()
+    {
+        return DbSet.ToList();
+    }
+
+    public Tag GetTagById(int tagId)
+    {
+        var tagModel = DbSet.FirstOrDefault(t => t.TagId == tagId);
+        if (tagModel != null)
+        {
+            return new Tag(tagModel.TagId, tagModel.Name);
         }
-
-        protected override DbSet<TagModel> DbSet => _context.Set<TagModel>();
-
-        protected override TagModel MapFrom(Tag entity)
+        else
         {
-            return new TagModel(entity.TagId, entity.Name)
-            {
-                TagId = entity.TagId,
-                Name = entity.Name
-            };
+            throw new ArgumentException("Тег не найден");
         }
+    }
 
-        protected override bool Equal(Tag entity, TagModel model)
+    public Tag GetTagByName(string tagName)
+    {
+        var tagModel = DbSet.FirstOrDefault(t => t.Name == tagName);
+        if (tagModel != null)
         {
-            return entity.TagId == model.TagId;
+            return new Tag(tagModel.TagId, tagModel.Name);
         }
-
-        protected override void UpdateModel(TagModel model, Tag entity)
+        else
         {
-            model.Name = entity.Name;
+            throw new ArgumentException("Тег не найден");
         }
+    }
 
+    public void AddTag(Tag tag)
+    {
+        DbSet.Add(MapFrom(tag));
+    }
 
-        public IEnumerable<TagModel> GetAllTags()
+    public void DeleteTag(int tagId)
+    {
+        var tagToRemove = DbSet.FirstOrDefault(t => t.TagId == tagId);
+        if (tagToRemove != null)
         {
-            return DbSet.ToList();
+            DbSet.Remove(tagToRemove);
         }
-
-        public Tag GetTagById(int tagId)
+        else
         {
-            var tagModel = DbSet.FirstOrDefault(t => t.TagId == tagId);
-            if (tagModel != null)
-            {
-                return new Tag(tagModel.TagId, tagModel.Name);
-            }
-            else
-            {
-                throw new ArgumentException("Тег не найден");
-            }
-        }
-
-        public Tag GetTagByName(string tagName)
-        {
-            var tagModel = DbSet.FirstOrDefault(t => t.Name == tagName);
-            if (tagModel != null)
-            {
-                return new Tag(tagModel.TagId, tagModel.Name);
-            }
-            else
-            {
-                throw new ArgumentException("Тег не найден");
-            }
-        }
-
-        public void AddTag(Tag tag)
-        {
-            DbSet.Add(MapFrom(tag));
-        }
-
-        public void DeleteTag(int tagId)
-        {
-            var tagToRemove = DbSet.FirstOrDefault(t => t.TagId == tagId);
-            if (tagToRemove != null)
-            {
-                DbSet.Remove(tagToRemove);
-            }
-            else
-            {
-                throw new ArgumentException("Тег не найден");
-            }
+            throw new ArgumentException("Тег не найден");
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿
+using Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
+
 namespace Sample.Application.Sample.Application.Models.DTO;
 
 public class Page
@@ -7,7 +9,7 @@ public class Page
     public string Title { get; set; }
     public List<Article> ArticlesOrNews { get; set; }
 
-    public Page(int pageId, string title, List<Article> articlesOrNews)
+    public Page(int pageId, string title, List<ArticleModel> articlesOrNews)
     {
         PageId = pageId;
         Title = title;

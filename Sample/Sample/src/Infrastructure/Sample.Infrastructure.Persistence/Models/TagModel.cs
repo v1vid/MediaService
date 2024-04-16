@@ -1,8 +1,10 @@
 ﻿namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Models;
-public class TagModel
+public class TagModel 
 { 
     public int TagId { get; set; }
     public string Name { get; set; }
+
+    public TagModel() { }
 
     public TagModel(int tagId, string name)
     {

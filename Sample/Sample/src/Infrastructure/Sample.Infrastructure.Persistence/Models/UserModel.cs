@@ -9,7 +9,9 @@ public class UserModel
     public string Username { get; set; }
     public string Password { get; set; }
     public string Email { get; set; }
-    public List<Role> Roles { get; set; }
+    public List<RoleModel> Roles { get; set; }
+    
+    public UserModel() { }
 
     public UserModel(int userId, string username, string password, string email)
     {
@@ -17,11 +19,11 @@ public class UserModel
         Username = username;
         Password = password;
         Email = email;
-        Roles = new List<Role>();
+        Roles = new List<RoleModel>();
     }
     public void AddRole(UserRole roleType, string description)
     {
-        Roles.Add(new Role(roleType, description));
+        Roles.Add(new RoleModel(roleType, description));
     }
 
     public void RemoveRole(UserRole roleType)

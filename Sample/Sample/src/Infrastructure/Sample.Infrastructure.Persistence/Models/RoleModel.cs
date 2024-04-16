@@ -6,6 +6,9 @@ public class RoleModel
 {
     public UserRole RoleType { get; set; }
     public string Description { get; set; }
+    
+    public RoleModel() { }
+
 
     public RoleModel(UserRole roleType, string description)
     {

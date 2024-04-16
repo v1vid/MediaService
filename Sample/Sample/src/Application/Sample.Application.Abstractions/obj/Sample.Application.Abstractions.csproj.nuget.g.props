@@ -12,7 +12,10 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\ulevd\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)itmo.dev.editorconfig\1.0.1\build\Itmo.Dev.Editorconfig.props" Condition="Exists('$(NuGetPackageRoot)itmo.dev.editorconfig\1.0.1\build\Itmo.Dev.Editorconfig.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgStyleCop_Analyzers_Unstable Condition=" '$(PkgStyleCop_Analyzers_Unstable)' == '' ">C:\Users\ulevd\.nuget\packages\stylecop.analyzers.unstable\1.2.0.406</PkgStyleCop_Analyzers_Unstable>
+    <PkgStyleCop_Analyzers Condition=" '$(PkgStyleCop_Analyzers)' == '' ">C:\Users\ulevd\.nuget\packages\stylecop.analyzers\1.0.0</PkgStyleCop_Analyzers>
   </PropertyGroup>
 </Project>

@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "dgSpecHash": "iwtkjZn5827Pct2tQQrC/fkQTlNvIqinWIdUxOE41wh/8nnRG60NBshrR25vAsh4wh9QN3yvlzatHVRk6gT/GQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Presentation\\Sample.Presentation.Http\\Sample.Presentation.Http.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ulevd\\.nuget\\packages\\itmo.dev.editorconfig\\1.0.1\\itmo.dev.editorconfig.1.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\stylecop.analyzers\\1.0.0\\stylecop.analyzers.1.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта Itmo.Dev.Editorconfig не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "Itmo.Dev.Editorconfig",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта StyleCop.Analyzers не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "StyleCop.Analyzers",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта System.Linq.Async не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "System.Linq.Async",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    }
+  ]
+}

@@ -13,12 +13,12 @@ namespace Sample.Infrastructure.Sample.Infrastructure.Persistence.Contexts
             Database.EnsureCreated();
         }
 
-        public DbSet<ArticleModel> Articles { get; set; }
-        public DbSet<PageModel> Pages { get; set; }
-        public DbSet<RoleModel> Roles { get; set; }
-        public DbSet<TagModel> Tags { get; set; }
-        public DbSet<UserModel> Users { get; set; }
-        public DbSet<UserRoleAssignmentModel> UserRoleAssignments { get; set; }
+        public DbSet<ArticleModel> Articles { get; protected init; }
+        public DbSet<PageModel> Pages { get; protected init; }
+        public DbSet<RoleModel> Roles { get; protected init; }
+        public DbSet<TagModel> Tags { get; protected init; }
+        public DbSet<UserModel> Users { get; protected init; }
+        public DbSet<UserRoleAssignmentModel> UserRoleAssignments { get; protected init; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
