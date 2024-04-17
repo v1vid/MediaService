@@ -1,0 +1,16 @@
+﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=5432;Database=cms;User Id=postgres;Password=1472;"
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5017",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      }
+    }
+  }
+}

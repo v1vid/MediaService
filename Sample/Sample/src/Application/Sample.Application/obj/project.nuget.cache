@@ -1,0 +1,176 @@
+{
+  "version": 2,
+  "dgSpecHash": "5oGBMR8kx6jHJniuXky1mD+SFbm7oevtiV4lySeYz8bii9DOmxPG3XlfRnyt98T8kmpKySgcJEJUd9YWOCPVDw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\ulevd\\Sample (4)\\Sample\\Sample\\src\\Application\\Sample.Application\\Sample.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentchaining\\1.0.4\\fluentchaining.1.0.4.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator\\3.3.2\\fluentmigrator.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.abstractions\\3.3.2\\fluentmigrator.abstractions.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.extensions.oracle\\3.3.2\\fluentmigrator.extensions.oracle.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.extensions.postgres\\3.3.2\\fluentmigrator.extensions.postgres.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.extensions.sqlanywhere\\3.3.2\\fluentmigrator.extensions.sqlanywhere.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.extensions.sqlserver\\3.3.2\\fluentmigrator.extensions.sqlserver.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner\\3.3.2\\fluentmigrator.runner.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.core\\3.3.2\\fluentmigrator.runner.core.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.db2\\3.3.2\\fluentmigrator.runner.db2.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.firebird\\3.3.2\\fluentmigrator.runner.firebird.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.hana\\3.3.2\\fluentmigrator.runner.hana.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.mysql\\3.3.2\\fluentmigrator.runner.mysql.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.oracle\\3.3.2\\fluentmigrator.runner.oracle.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.postgres\\3.3.2\\fluentmigrator.runner.postgres.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.redshift\\3.3.2\\fluentmigrator.runner.redshift.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.sqlanywhere\\3.3.2\\fluentmigrator.runner.sqlanywhere.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.sqlite\\3.3.2\\fluentmigrator.runner.sqlite.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.sqlserver\\3.3.2\\fluentmigrator.runner.sqlserver.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentmigrator.runner.sqlserverce\\3.3.2\\fluentmigrator.runner.sqlserverce.3.3.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentscanning\\2.0.1\\fluentscanning.2.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\fluentscanning.dependencyinjection\\2.0.1\\fluentscanning.dependencyinjection.2.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\humanizer.core.uk\\2.14.1\\humanizer.core.uk.2.14.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\itmo.dev.editorconfig\\1.0.1\\itmo.dev.editorconfig.1.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\itmo.dev.platform.common\\1.0.48\\itmo.dev.platform.common.1.0.48.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\itmo.dev.platform.postgres\\1.0.48\\itmo.dev.platform.postgres.1.0.48.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.2\\microsoft.data.sqlclient.2.1.2.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.configuration\\1.0.0\\microsoft.extensions.configuration.1.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.configuration.binder\\1.0.0\\microsoft.extensions.configuration.binder.1.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\1.0.0\\microsoft.extensions.dependencyinjection.abstractions.1.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\7.0.0\\microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.logging\\2.0.1\\microsoft.extensions.logging.2.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\1.0.0\\microsoft.extensions.options.configurationextensions.1.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.8.0\\microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\sourcekit\\1.1.30\\sourcekit.1.1.30.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\sourcekit.analyzers.mustbepartial\\1.1.30\\sourcekit.analyzers.mustbepartial.1.1.30.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\sourcekit.analyzers.mustbepartial.annotations\\1.1.30\\sourcekit.analyzers.mustbepartial.annotations.1.1.30.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\sourcekit.generators.builder\\1.2.30\\sourcekit.generators.builder.1.2.30.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\sourcekit.generators.builder.annotations\\1.1.30\\sourcekit.generators.builder.annotations.1.1.30.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\stylecop.analyzers\\1.0.0\\stylecop.analyzers.1.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.collections.nongeneric\\4.0.1\\system.collections.nongeneric.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.collections.specialized\\4.0.1\\system.collections.specialized.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.componentmodel\\4.0.1\\system.componentmodel.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.componentmodel.primitives\\4.1.0\\system.componentmodel.primitives.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.componentmodel.typeconverter\\4.1.0\\system.componentmodel.typeconverter.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.globalization\\4.0.11\\system.globalization.4.0.11.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.globalization.extensions\\4.0.1\\system.globalization.extensions.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.io\\4.1.0\\system.io.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection.emit\\4.0.1\\system.reflection.emit.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.0.1\\system.reflection.emit.ilgeneration.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection.emit.lightweight\\4.0.1\\system.reflection.emit.lightweight.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection.extensions\\4.0.1\\system.reflection.extensions.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection.primitives\\4.0.1\\system.reflection.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.reflection.typeextensions\\4.1.0\\system.reflection.typeextensions.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.resources.resourcemanager\\4.0.1\\system.resources.resourcemanager.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.runtime.extensions\\4.1.0\\system.runtime.extensions.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.runtime.handles\\4.0.1\\system.runtime.handles.4.0.1.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.runtime.interopservices\\4.1.0\\system.runtime.interopservices.4.1.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.text.encoding\\4.0.11\\system.text.encoding.4.0.11.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
+    "C:\\Users\\ulevd\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта Itmo.Dev.Editorconfig не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "Itmo.Dev.Editorconfig",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта Microsoft.Extensions.DependencyInjection.Abstractions не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта StyleCop.Analyzers не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "StyleCop.Analyzers",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Error",
+      "message": "Warning As Error: Зависимость проекта System.Linq.Async не содержит включенную нижнюю границу. Включите нижнюю границу в версию зависимости, чтобы обеспечить согласованные результаты восстановления.",
+      "libraryId": "System.Linq.Async",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1602",
+      "level": "Error",
+      "message": "Warning As Error: Sample.Application.Abstractions не задает включенную нижнюю границу для зависимости Itmo.Dev.Platform.Common. Использовано наилучшее приближенное соответствие Itmo.Dev.Platform.Common 1.0.48.",
+      "libraryId": "Itmo.Dev.Platform.Common",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1602",
+      "level": "Error",
+      "message": "Warning As Error: Sample.Application.Abstractions не задает включенную нижнюю границу для зависимости Itmo.Dev.Platform.Postgres. Использовано наилучшее приближенное соответствие Itmo.Dev.Platform.Postgres 1.0.48.",
+      "libraryId": "Itmo.Dev.Platform.Postgres",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1602",
+      "level": "Error",
+      "message": "Warning As Error: Sample.Application.Abstractions не задает включенную нижнюю границу для зависимости Microsoft.Extensions.Options.ConfigurationExtensions. Использовано наилучшее приближенное соответствие Microsoft.Extensions.Options.ConfigurationExtensions 1.0.0.",
+      "libraryId": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

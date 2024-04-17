@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <NoWarn>$(NoWarn);NU1504;NU1505;NU1701</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Itmo.Dev.Editorconfig" Version="1.0.1" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.0.0" />
+        <PackageReference Include="System.Linq.Async" Version="4.0.0"/>
+    </ItemGroup>
+
+</Project>

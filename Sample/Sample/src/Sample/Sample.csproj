@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="..\Application\Sample.Application\Sample.Application.csproj"/>
+        <ProjectReference Include="..\Infrastructure\Sample.Infrastructure.Persistence\Sample.Infrastructure.Persistence.csproj"/>
+        <ProjectReference Include="..\Presentation\Sample.Presentation.Http\Sample.Presentation.Http.csproj" />
+    </ItemGroup>
+
+ 
+    <ItemGroup>
+        <Content Update="appsettings.*.json">
+            <DependentUpon>appsettings.json</DependentUpon>
+        </Content>
+    </ItemGroup>
+
+</Project>

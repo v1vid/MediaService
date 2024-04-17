@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\Sample.Application.Models\Sample.Application.Models.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+    </ItemGroup>
+
+</Project>
